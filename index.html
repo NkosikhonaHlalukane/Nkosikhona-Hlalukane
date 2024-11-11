@@ -3,42 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nkosikhona Hlalukane - Portfolio</title>
+    <title>Nkosikhona Hlalukane | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Nkosikhona Hlalukane</div>
-            <ul class="nav-links" id="nav-links">
+        <h2 class="logo">Nkosikhona</h2>
+        <nav>
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="mailto:hlalukane35@gmail.com" class="cta">Hire Me</a></li>
+                <li><a href="#contact" class="cta">Hire Me</a></li>
             </ul>
-            <div class="burger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <img src="mundojones.png" alt="Nkosikhona Hlalukane" class="profile-pic">
-            <h1>Nkosikhona Hlalukane</h1>
-            <p>Web Designer, Developer & Digital Marketer</p>
+            <h1>Hello, I am <span>Nkosikhona Hlalukane</span></h1>
+            <p>Developer | Digital Marketer | Retail Specialist</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="mailto:hlalukane35@gmail.com">Email</a>
+            </div>
+            <button class="contact-btn">Contact Me</button>
+        </div>
+        <div class="hero-image">
+            <img src="mundojones.png" alt="Nkosikhona Hlalukane">
         </div>
     </section>
+
+    <!-- Skills Section -->
+    <section id="services" class="skills">
+        <div class="skill-box">
+            <h3>Retail Sales</h3>
+            <p>5+ years of experience in retail environments, exceptional customer service, and upselling.</p>
+        </div>
+        <div class="skill-box">
+            <h3>Digital Marketing</h3>
+            <p>SEO, content creation, and social media strategies for brand growth.</p>
+        </div>
+        <div class="skill-box">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript with responsive design for dynamic websites.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:hlalukane35@gmail.com">hlalukane35@gmail.com</a></p>
+        <p>Phone: 071 286 9574</p>
+        <p>Address: D1261, Bergville, 3350</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-<script>
-    function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('active');
-    }
-</script>
 </html>
