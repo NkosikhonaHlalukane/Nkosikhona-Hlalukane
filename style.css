@@ -10,12 +10,13 @@ body {
     color: #fff;
 }
 
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #001f3f;
+    background-color: #002b5b;
 }
 
 .logo {
@@ -41,8 +42,14 @@ nav ul li a {
 nav ul li a.cta {
     background-color: #36c737;
     border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
+nav ul li a.cta:hover {
+    background-color: #1aff73;
+}
+
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -56,29 +63,54 @@ nav ul li a.cta {
     color: #36c737;
 }
 
-.hero-content p {
-    margin: 10px 0;
+.contact-btn {
+    background-color: #36c737;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.hero-image img {
-    border-radius: 50%;
-    max-width: 200px;
+.contact-btn:hover {
+    background-color: #1aff73;
 }
 
-.skills {
-    display: flex;
-    justify-content: space-around;
+/* Projects Section */
+.projects {
     padding: 50px 20px;
     background-color: #001f3f;
 }
 
-.skill-box {
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
     background-color: #0a0f24;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
+    text-align: center;
 }
 
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #36c737;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #1aff73;
+}
+
+/* Contact Section */
 .contact {
     text-align: center;
     padding: 50px 20px;
