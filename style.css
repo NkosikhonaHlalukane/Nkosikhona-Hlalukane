@@ -5,105 +5,87 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0a1b2f;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0f24;
     color: #fff;
 }
 
-/* Header Styles */
 header {
-    position: sticky;
-    top: 0;
-    background-color: #0e1a2b;
-    padding: 20px;
-    z-index: 1000;
-}
-
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
+    background-color: #001f3f;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
+    font-size: 24px;
+    color: #36c737;
 }
 
-.nav-links {
+nav ul {
     display: flex;
-    gap: 20px;
     list-style: none;
 }
 
-.nav-links li a {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    padding: 10px 15px;
 }
 
-.nav-links li a:hover {
-    color: #ff6363;
+nav ul li a.cta {
+    background-color: #36c737;
+    border-radius: 20px;
 }
 
-.cta {
-    background-color: #ff6363;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.cta:hover {
-    background-color: #e55757;
-}
-
-/* Burger Menu */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.burger span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 4px;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #0e1a2b;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 20px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-}
-
-/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #0a0f24;
 }
 
-.profile-pic {
-    width: 150px;
+.hero-content h1 {
+    font-size: 3rem;
+    color: #36c737;
+}
+
+.hero-content p {
+    margin: 10px 0;
+}
+
+.hero-image img {
     border-radius: 50%;
-    margin-bottom: 20px;
+    max-width: 200px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #001f3f;
+}
+
+.skill-box {
+    background-color: #0a0f24;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0a0f24;
+}
+
+.contact a {
+    color: #36c737;
+    text-decoration: none;
 }
