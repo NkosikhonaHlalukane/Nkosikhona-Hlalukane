@@ -63,6 +63,18 @@ nav ul li a.cta:hover {
     color: #36c737;
 }
 
+.hero-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #36c737;
+    text-decoration: none;
+}
+
 .contact-btn {
     background-color: #36c737;
     padding: 10px 20px;
@@ -80,6 +92,12 @@ nav ul li a.cta:hover {
 .projects {
     padding: 50px 20px;
     background-color: #001f3f;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .project-cards {
@@ -110,11 +128,28 @@ nav ul li a.cta:hover {
     background-color: #1aff73;
 }
 
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0a0f24;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
 /* Contact Section */
 .contact {
     text-align: center;
     padding: 50px 20px;
     background-color: #0a0f24;
+}
+
+.contact p {
+    font-size: 1.2rem;
 }
 
 .contact a {
