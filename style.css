@@ -1,27 +1,67 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a0f24, #003b56, #36c737); /* Vibrant gradient */
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #002b5b;
+}
+
+.logo {
+    font-size: 24px;
+    color: #36c737;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a.cta {
+    background-color: #36c737;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.cta:hover {
+    background-color: #1aff73;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px;
-    background-color: #0a0f24;
+    background: linear-gradient(135deg, #003b56, #36c737); /* Subtle gradient for hero section */
 }
 
 .hero-content h1 {
     font-size: 3rem;
     color: #36c737;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.social-links a {
-    margin-right: 10px;
-    color: #36c737;
-    text-decoration: none;
 }
 
 .contact-btn {
@@ -37,8 +77,58 @@
     background-color: #1aff73;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    /* Ensures the image is responsive and doesn't exceed the container width */
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #001f3f;
 }
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    background-color: #0a0f24;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #36c737;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #1aff73;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0a0f24;
+}
+
+.contact a {
+    color: #36c737;
+    text-decoration: none;
+}
+
+/* Smooth Scroll for Navigation Links */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
